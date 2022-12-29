@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'GemvaryCloudCallSDK/Classes/**/*'
+#  s.source_files = 'GemvaryCloudCallSDK/Classes/**/*'
   s.vendored_frameworks = "GemvaryCloudCallSDK/Frameworks/GemvaryCloudCallSDK.framework"
 
   # s.resource_bundles = {

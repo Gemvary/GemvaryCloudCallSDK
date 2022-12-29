@@ -17,7 +17,23 @@ GemvaryCloudCallSDK is available through [CocoaPods](https://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/songmenglong/SMLSpec.git'
+
+
 pod 'GemvaryCloudCallSDK'
+```
+
+## Release
+
+```
+pod spec lint --sources='https://github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
+
+pod spec lint --sources='https://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@github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
+
+
+pod repo push GemvarySpec GemvaryCloudCallSDK.podspec --allow-warnings --verbose --skip-import-validation
+
 ```
 
 ## Author
