@@ -1,4 +1,4 @@
-# macOS
+# OS X
 .DS_Store
 
 # Xcode
@@ -13,6 +13,7 @@ build/
 !default.perspectivev3
 xcuserdata/
 *.xccheckout
+profile
 *.moved-aside
 DerivedData
 *.hmap
@@ -34,3 +35,21 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 # Pods/
+
+# Xcode
+.DS_Store
+*/build/*
+xcuserdata
+profile
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+*.xcworkspace
+!default.xcworkspace
+
+#CocoaPods
+Pods
+!Podfile
+!Podfile.lock
+

@@ -1,0 +1,16 @@
+PODS:
+  - GemvaryCloudCallSDK (0.1.0)
+
+DEPENDENCIES:
+  - GemvaryCloudCallSDK (from `../`)
+
+EXTERNAL SOURCES:
+  GemvaryCloudCallSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GemvaryCloudCallSDK: edefb90448520e413427d7e00082134c41102f2d
+
+PODFILE CHECKSUM: 0f86dc171154a13b09d4bb5634f1cdb551482005
+
+COCOAPODS: 1.11.3

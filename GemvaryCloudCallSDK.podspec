@@ -21,17 +21,18 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/songmenglong/GemvaryCloudCallSDK'
+  s.homepage         = 'https://github.com/Gemvary/GemvaryCloudCallSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'songmenglong' => '983174628@qq.com' }
-  s.source           = { :git => 'https://github.com/songmenglong/GemvaryCloudCallSDK.git', :tag => s.version.to_s }
+  s.author           = { 'Gemvary' => 'apple@gemvary.com' }
+  s.source           = { :git => 'https://github.com/Gemvary/GemvaryCloudCallSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'GemvaryCloudCallSDK/Classes/**/*'
-  
+  s.vendored_frameworks = "GemvaryCloudCallSDK/Frameworks/GemvaryCloudCallSDK.framework"
+
   # s.resource_bundles = {
   #   'GemvaryCloudCallSDK' => ['GemvaryCloudCallSDK/Assets/*.png']
   # }

@@ -1,0 +1,6 @@
+framework module GemvaryCloudCallSDK {
+  umbrella header "GemvaryCloudCallSDK.h"
+
+  export *
+  module * { export * }
+}
