@@ -1,5 +1,5 @@
 import XCTest
-import GemvaryCloudCallSDK
+//import GemvaryCloudCallSDK
 
 class Tests: XCTestCase {
     
