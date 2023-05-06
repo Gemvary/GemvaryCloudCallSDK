@@ -12,13 +12,45 @@
 		<data>
 		1GcTg9vcOTTyjb/Ad6aHV6qcdv4=
 		</data>
+		<key>Headers/UCSCommonClass.h</key>
+		<data>
+		fLxTkBaRTYDI3JUR6sIxYCA8EuQ=
+		</data>
+		<key>Headers/UCSError.h</key>
+		<data>
+		dZcQGDdm4LT+Wn2gr5YSC/oiA2A=
+		</data>
 		<key>Headers/UCSFuncEngine.h</key>
 		<data>
 		eALwEfnVBYu3NlO9jPxQBBXJU6s=
 		</data>
+		<key>Headers/UCSTCPCommonClass.h</key>
+		<data>
+		YBEIS98AcWytrEo3LfevD3aWMOU=
+		</data>
+		<key>Headers/UCSTCPDelegateBase.h</key>
+		<data>
+		/2G1dNp2gTuZxK5kpyS9NDQ2B+E=
+		</data>
+		<key>Headers/UCSTCPSDK.h</key>
+		<data>
+		1diRdmQQuQnrioTr4xZ2OC05sWg=
+		</data>
+		<key>Headers/UCSTcpClient.h</key>
+		<data>
+		1i5pR9t2Z2l5MbRXvKpK/VPelMQ=
+		</data>
+		<key>Headers/UCSTcpDefine.h</key>
+		<data>
+		Y6thF0kBxq6oojHwuFddZan1XNc=
+		</data>
+		<key>Headers/UCSVideoDefine.h</key>
+		<data>
+		H21XLLxEPAEhm/RGAOCqVFblvyo=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		7R6zhKqlwBFIfG0Z6D2MJ/G9XHY=
+		QFm5QG3mcuv1MAOc1pucePIpkYk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -49,6 +81,28 @@
 			imTOH3VXxSuhvNkgMb+fFT56BlFXLT+/5j0drqM5toA=
 			</data>
 		</dict>
+		<key>Headers/UCSCommonClass.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fLxTkBaRTYDI3JUR6sIxYCA8EuQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			+X1B0oxQpvgC74GOnDCQfNnAzojmkg8O5o1JF1aD9rI=
+			</data>
+		</dict>
+		<key>Headers/UCSError.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dZcQGDdm4LT+Wn2gr5YSC/oiA2A=
+			</data>
+			<key>hash2</key>
+			<data>
+			J96PBmUU+O6LhFNvR/rQraB3sYfh4ONGaL6ZE0dRG3w=
+			</data>
+		</dict>
 		<key>Headers/UCSFuncEngine.h</key>
 		<dict>
 			<key>hash</key>
@@ -58,6 +112,72 @@
 			<key>hash2</key>
 			<data>
 			y9azJ0xql0HM7fWZZzFJBVZlChlUVFLWih5sDKpQAps=
+			</data>
+		</dict>
+		<key>Headers/UCSTCPCommonClass.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YBEIS98AcWytrEo3LfevD3aWMOU=
+			</data>
+			<key>hash2</key>
+			<data>
+			6qQNnFfW9tZB19atGMBdly+BHENAdPbWLoxtRaRN5BQ=
+			</data>
+		</dict>
+		<key>Headers/UCSTCPDelegateBase.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/2G1dNp2gTuZxK5kpyS9NDQ2B+E=
+			</data>
+			<key>hash2</key>
+			<data>
+			DXFnGWlDctVAn384L9gFTo2xk7zXjK3i+ABW2FJ5HXc=
+			</data>
+		</dict>
+		<key>Headers/UCSTCPSDK.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1diRdmQQuQnrioTr4xZ2OC05sWg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ceGPUGp8wYVuoDm4gCw/dzcxr/xsuCqvw62fgbefC3c=
+			</data>
+		</dict>
+		<key>Headers/UCSTcpClient.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1i5pR9t2Z2l5MbRXvKpK/VPelMQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			rtTwVSe42s/gQFfboxIpcZf9p2AJf6/Hihdtdcg5a8c=
+			</data>
+		</dict>
+		<key>Headers/UCSTcpDefine.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y6thF0kBxq6oojHwuFddZan1XNc=
+			</data>
+			<key>hash2</key>
+			<data>
+			8YeXO30ffCtqLBe6TqsysLUpzdWL53tRsQeKLbcSC3g=
+			</data>
+		</dict>
+		<key>Headers/UCSVideoDefine.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H21XLLxEPAEhm/RGAOCqVFblvyo=
+			</data>
+			<key>hash2</key>
+			<data>
+			EfC+2pgz2K6H55nixLc39GETht/GG1mGun/z6uDhpts=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

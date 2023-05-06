@@ -9,11 +9,25 @@
 /* Begin PBXBuildFile section */
 		27670B395BBFCE236F82A3BF /* Pods_GemvaryCloudCallSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C211506AB337E7D2BB5A25D7 /* Pods_GemvaryCloudCallSDK_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A2BD832E29E532FD00BD9543 /* ParamTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD832D29E532FD00BD9543 /* ParamTools.swift */; };
+		A2BD833029E534A400BD9543 /* FunctionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD832F29E534A400BD9543 /* FunctionListVC.swift */; };
+		A2BD833229E5360E00BD9543 /* UCSCloudCallTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD833129E5360E00BD9543 /* UCSCloudCallTool.swift */; };
+		A2BD834929E5403100BD9543 /* CloudCallSoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD833829E5403100BD9543 /* CloudCallSoundEffect.swift */; };
+		A2BD834A29E5403100BD9543 /* incomingCall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A2BD833A29E5403100BD9543 /* incomingCall.mp3 */; };
+		A2BD834B29E5403100BD9543 /* ring.caf in Resources */ = {isa = PBXBuildFile; fileRef = A2BD833B29E5403100BD9543 /* ring.caf */; };
+		A2BD834C29E5403100BD9543 /* cnwav.m4r in Resources */ = {isa = PBXBuildFile; fileRef = A2BD833C29E5403100BD9543 /* cnwav.m4r */; };
+		A2BD834E29E5403100BD9543 /* CloudCallVibrationer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD833E29E5403100BD9543 /* CloudCallVibrationer.swift */; };
+		A2BD834F29E5403100BD9543 /* UCSVibrationer.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BD834229E5403100BD9543 /* UCSVibrationer.m */; };
+		A2BD835029E5403100BD9543 /* UCSSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BD834329E5403100BD9543 /* UCSSoundEffect.m */; };
+		A2BD835129E5403100BD9543 /* UCSVoipCallController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BD834429E5403100BD9543 /* UCSVoipCallController.m */; };
+		A2BD835229E5403100BD9543 /* UCSVideoCallController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BD834529E5403100BD9543 /* UCSVideoCallController.m */; };
+		A2BD835329E5403100BD9543 /* UCSVideoCloudCallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD834829E5403100BD9543 /* UCSVideoCloudCallVC.swift */; };
+		A2BD835629E540A800BD9543 /* MarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BD835529E540A800BD9543 /* MarqueeView.m */; };
+		A2BD835829E5454C00BD9543 /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BD835729E5454C00BD9543 /* Community.storyboard */; };
 		AE8A2618DAB0D600A9A66BD0 /* Pods_GemvaryCloudCallSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774B8756940A20675D3F7CA2 /* Pods_GemvaryCloudCallSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +47,6 @@
 		607FACD01AFB9204008FA782 /* GemvaryCloudCallSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemvaryCloudCallSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,6 +55,28 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		63FF288AEF68FBED06C6D929 /* Pods-GemvaryCloudCallSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemvaryCloudCallSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-GemvaryCloudCallSDK_Tests/Pods-GemvaryCloudCallSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		774B8756940A20675D3F7CA2 /* Pods_GemvaryCloudCallSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemvaryCloudCallSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BD832929E52DE400BD9543 /* GemvaryCloudCallSDK_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GemvaryCloudCallSDK_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2BD832D29E532FD00BD9543 /* ParamTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamTools.swift; sourceTree = "<group>"; };
+		A2BD832F29E534A400BD9543 /* FunctionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionListVC.swift; sourceTree = "<group>"; };
+		A2BD833129E5360E00BD9543 /* UCSCloudCallTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCSCloudCallTool.swift; sourceTree = "<group>"; };
+		A2BD833629E539F000BD9543 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A2BD833829E5403100BD9543 /* CloudCallSoundEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudCallSoundEffect.swift; sourceTree = "<group>"; };
+		A2BD833A29E5403100BD9543 /* incomingCall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incomingCall.mp3; sourceTree = "<group>"; };
+		A2BD833B29E5403100BD9543 /* ring.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring.caf; sourceTree = "<group>"; };
+		A2BD833C29E5403100BD9543 /* cnwav.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = cnwav.m4r; sourceTree = "<group>"; };
+		A2BD833E29E5403100BD9543 /* CloudCallVibrationer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudCallVibrationer.swift; sourceTree = "<group>"; };
+		A2BD834029E5403100BD9543 /* UCSVideoCallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSVideoCallController.h; sourceTree = "<group>"; };
+		A2BD834129E5403100BD9543 /* UCSVoipCallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSVoipCallController.h; sourceTree = "<group>"; };
+		A2BD834229E5403100BD9543 /* UCSVibrationer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSVibrationer.m; sourceTree = "<group>"; };
+		A2BD834329E5403100BD9543 /* UCSSoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSSoundEffect.m; sourceTree = "<group>"; };
+		A2BD834429E5403100BD9543 /* UCSVoipCallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSVoipCallController.m; sourceTree = "<group>"; };
+		A2BD834529E5403100BD9543 /* UCSVideoCallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSVideoCallController.m; sourceTree = "<group>"; };
+		A2BD834629E5403100BD9543 /* UCSVibrationer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSVibrationer.h; sourceTree = "<group>"; };
+		A2BD834729E5403100BD9543 /* UCSSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSSoundEffect.h; sourceTree = "<group>"; };
+		A2BD834829E5403100BD9543 /* UCSVideoCloudCallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCSVideoCloudCallVC.swift; sourceTree = "<group>"; };
+		A2BD835429E540A800BD9543 /* MarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeView.h; sourceTree = "<group>"; };
+		A2BD835529E540A800BD9543 /* MarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeView.m; sourceTree = "<group>"; };
+		A2BD835729E5454C00BD9543 /* Community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Community.storyboard; sourceTree = "<group>"; };
 		A939263015EEC31B0593C0CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C211506AB337E7D2BB5A25D7 /* Pods_GemvaryCloudCallSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemvaryCloudCallSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE96B45991EB91822CECDC0 /* Pods-GemvaryCloudCallSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemvaryCloudCallSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-GemvaryCloudCallSDK_Example/Pods-GemvaryCloudCallSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +129,15 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				A2BD832F29E534A400BD9543 /* FunctionListVC.swift */,
+				A2BD833629E539F000BD9543 /* PrefixHeader.pch */,
+				A2BD835429E540A800BD9543 /* MarqueeView.h */,
+				A2BD835529E540A800BD9543 /* MarqueeView.m */,
+				A2BD832D29E532FD00BD9543 /* ParamTools.swift */,
+				A2BD833129E5360E00BD9543 /* UCSCloudCallTool.swift */,
+				A2BD832929E52DE400BD9543 /* GemvaryCloudCallSDK_Example-Bridging-Header.h */,
+				A2BD833729E5403100BD9543 /* CloudCall */,
+				A2BD835729E5454C00BD9543 /* Community.storyboard */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -159,6 +202,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A2BD833729E5403100BD9543 /* CloudCall */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD833829E5403100BD9543 /* CloudCallSoundEffect.swift */,
+				A2BD833929E5403100BD9543 /* source */,
+				A2BD833E29E5403100BD9543 /* CloudCallVibrationer.swift */,
+				A2BD833F29E5403100BD9543 /* UCSCloudCall */,
+				A2BD834829E5403100BD9543 /* UCSVideoCloudCallVC.swift */,
+			);
+			path = CloudCall;
+			sourceTree = "<group>";
+		};
+		A2BD833929E5403100BD9543 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD833A29E5403100BD9543 /* incomingCall.mp3 */,
+				A2BD833B29E5403100BD9543 /* ring.caf */,
+				A2BD833C29E5403100BD9543 /* cnwav.m4r */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		A2BD833F29E5403100BD9543 /* UCSCloudCall */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD834029E5403100BD9543 /* UCSVideoCallController.h */,
+				A2BD834129E5403100BD9543 /* UCSVoipCallController.h */,
+				A2BD834229E5403100BD9543 /* UCSVibrationer.m */,
+				A2BD834329E5403100BD9543 /* UCSSoundEffect.m */,
+				A2BD834429E5403100BD9543 /* UCSVoipCallController.m */,
+				A2BD834529E5403100BD9543 /* UCSVideoCallController.m */,
+				A2BD834629E5403100BD9543 /* UCSVibrationer.h */,
+				A2BD834729E5403100BD9543 /* UCSSoundEffect.h */,
+			);
+			path = UCSCloudCall;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,7 +293,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 7UA78HHHB8;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1420;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -250,6 +330,10 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				A2BD834A29E5403100BD9543 /* incomingCall.mp3 in Resources */,
+				A2BD834C29E5403100BD9543 /* cnwav.m4r in Resources */,
+				A2BD834B29E5403100BD9543 /* ring.caf in Resources */,
+				A2BD835829E5454C00BD9543 /* Community.storyboard in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,11 +355,27 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GemvaryCloudCallSDK_Example/Pods-GemvaryCloudCallSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CleanJSON/CleanJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${PODS_ROOT}/../../GemvaryCloudCallSDK/Frameworks/GemvaryCloudCallSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GemvaryCommonSDK/GemvaryCommonSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GemvaryNetworkSDK/GemvaryNetworkSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GemvaryToolSDK/GemvaryToolSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/RealReachability/RealReachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CleanJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GemvaryCloudCallSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GemvaryCommonSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GemvaryNetworkSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GemvaryToolSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealReachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,8 +433,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A2BD834929E5403100BD9543 /* CloudCallSoundEffect.swift in Sources */,
+				A2BD835229E5403100BD9543 /* UCSVideoCallController.m in Sources */,
+				A2BD832E29E532FD00BD9543 /* ParamTools.swift in Sources */,
+				A2BD833229E5360E00BD9543 /* UCSCloudCallTool.swift in Sources */,
+				A2BD835129E5403100BD9543 /* UCSVoipCallController.m in Sources */,
+				A2BD834F29E5403100BD9543 /* UCSVibrationer.m in Sources */,
+				A2BD833029E534A400BD9543 /* FunctionListVC.swift in Sources */,
+				A2BD834E29E5403100BD9543 /* CloudCallVibrationer.swift in Sources */,
+				A2BD835629E540A800BD9543 /* MarqueeView.m in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				A2BD835029E5403100BD9543 /* UCSSoundEffect.m in Sources */,
+				A2BD835329E5403100BD9543 /* UCSVideoCloudCallVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -467,7 +577,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -480,12 +590,16 @@
 			baseConfigurationReference = CAE96B45991EB91822CECDC0 /* Pods-GemvaryCloudCallSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7UA78HHHB8;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/GemvaryCloudCallSDK/PrefixHeader.pch";
 				INFOPLIST_FILE = GemvaryCloudCallSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GemvaryCloudCallSDK/GemvaryCloudCallSDK_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -496,12 +610,15 @@
 			baseConfigurationReference = E5F8DE2615ACA133A0BEC035 /* Pods-GemvaryCloudCallSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7UA78HHHB8;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/GemvaryCloudCallSDK/PrefixHeader.pch";
 				INFOPLIST_FILE = GemvaryCloudCallSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GemvaryCloudCallSDK/GemvaryCloudCallSDK_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

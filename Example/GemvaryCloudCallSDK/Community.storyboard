@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--voip呼叫-->
+        <scene sceneID="Z1z-hC-6yj">
+            <objects>
+                <viewController storyboardIdentifier="UCSVoipCallController" title="voip呼叫" id="zpp-MZ-WhO" customClass="UCSVoipCallController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fs7-fd-T5E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eh0-gR-SmQ">
+                                <rect key="frame" x="62.5" y="557" width="250" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kev-EH-U1i">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="button_mute_off"/>
+                                        <state key="selected" backgroundImage="button_mute_on.png"/>
+                                        <connections>
+                                            <action selector="onMuteButton:" destination="zpp-MZ-WhO" eventType="touchUpInside" id="Y8b-gP-NB1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-HI-lh8">
+                                        <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="button_HF_off"/>
+                                        <state key="selected" title="免提" backgroundImage="button_HF_on.png"/>
+                                        <connections>
+                                            <action selector="onHandFreeButton:" destination="zpp-MZ-WhO" eventType="touchUpInside" id="knb-Br-5Rm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5o-jk-gv8">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="unlocking"/>
+                                        <connections>
+                                            <action selector="onOpenDoorButton:" destination="zpp-MZ-WhO" eventType="touchUpInside" id="zJh-Jp-b3t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5i-qr-8Dj">
+                                        <rect key="frame" x="150" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="answer_keys"/>
+                                        <connections>
+                                            <action selector="onAnswerButton:" destination="zpp-MZ-WhO" eventType="touchUpInside" id="9MS-yw-4F0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Iw-Rn-sPU">
+                                        <rect key="frame" x="200" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="hang_up_key"/>
+                                        <connections>
+                                            <action selector="onHangupButton:" destination="zpp-MZ-WhO" eventType="touchUpInside" id="Cce-GS-3uI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="afr-AH-FnL"/>
+                                    <constraint firstAttribute="height" constant="50" id="zQh-aJ-eN8"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="BV7-Mv-59c">
+                                <rect key="frame" x="137.5" y="80" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BIh-Tn-qpq"/>
+                                    <constraint firstAttribute="width" constant="100" id="ENr-yq-RKg"/>
+                                </constraints>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eq6-05-kBj" customClass="MarqueeView">
+                                <rect key="frame" x="87.5" y="188" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jhz-ny-H0h"/>
+                                    <constraint firstAttribute="width" constant="200" id="oNL-YK-rm7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ruG-iS-Ryw"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eq6-05-kBj" firstAttribute="top" secondItem="BV7-Mv-59c" secondAttribute="bottom" constant="8" id="9iE-rF-eeI"/>
+                            <constraint firstItem="eh0-gR-SmQ" firstAttribute="centerX" secondItem="ruG-iS-Ryw" secondAttribute="centerX" id="DEe-Nr-Fhq"/>
+                            <constraint firstItem="ruG-iS-Ryw" firstAttribute="bottom" secondItem="eh0-gR-SmQ" secondAttribute="bottom" constant="60" id="RVM-e4-jXb"/>
+                            <constraint firstItem="BV7-Mv-59c" firstAttribute="top" secondItem="ruG-iS-Ryw" secondAttribute="top" constant="80" id="Zvr-9Z-bla"/>
+                            <constraint firstItem="BV7-Mv-59c" firstAttribute="centerX" secondItem="ruG-iS-Ryw" secondAttribute="centerX" id="ea0-yw-F6I"/>
+                            <constraint firstItem="eq6-05-kBj" firstAttribute="centerX" secondItem="ruG-iS-Ryw" secondAttribute="centerX" id="hSA-q7-PNv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="q5i-qr-8Dj" id="BrA-bT-GNX"/>
+                        <outlet property="buttonsBgView" destination="eh0-gR-SmQ" id="g1M-UN-lyd"/>
+                        <outlet property="buttonsViewHeight" destination="zQh-aJ-eN8" id="fJb-bm-Eeg"/>
+                        <outlet property="buttonsViewWidth" destination="afr-AH-FnL" id="ZCi-2A-bFv"/>
+                        <outlet property="handFreeButton" destination="K2i-HI-lh8" id="ybe-UG-xvX"/>
+                        <outlet property="hangupButton" destination="9Iw-Rn-sPU" id="utr-1N-Tjg"/>
+                        <outlet property="headerImageView" destination="BV7-Mv-59c" id="y1F-CM-pbB"/>
+                        <outlet property="marqueeView" destination="eq6-05-kBj" id="RTG-jO-cw6"/>
+                        <outlet property="muteButton" destination="kev-EH-U1i" id="FJ5-rh-YkZ"/>
+                        <outlet property="openDoorButton" destination="T5o-jk-gv8" id="VhH-k6-bF3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIm-Wo-YYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="1509"/>
+        </scene>
+        <!--video呼叫-->
+        <scene sceneID="frG-UX-VwH">
+            <objects>
+                <viewController storyboardIdentifier="UCSVideoCallController" title="video呼叫" id="Rkk-o4-Sfu" customClass="UCSVideoCallController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c0K-aT-tcq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FV5-Df-nzn">
+                                <rect key="frame" x="62.5" y="557" width="250" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZA-T4-3Mq">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="button_mute_off"/>
+                                        <state key="selected" backgroundImage="button_mute_on.png"/>
+                                        <connections>
+                                            <action selector="onMuteButton:" destination="Rkk-o4-Sfu" eventType="touchUpInside" id="75i-WM-Skk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MH-4F-s4b">
+                                        <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="answer_keys"/>
+                                        <connections>
+                                            <action selector="onAnswerButton:" destination="Rkk-o4-Sfu" eventType="touchUpInside" id="oaP-du-1g7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECA-bh-TC4">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="unlocking"/>
+                                        <connections>
+                                            <action selector="onOpenDoorButton:" destination="Rkk-o4-Sfu" eventType="touchUpInside" id="vE0-hw-jCU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPH-zI-SGb">
+                                        <rect key="frame" x="150" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="hang_up_key"/>
+                                        <connections>
+                                            <action selector="onHangupButton:" destination="Rkk-o4-Sfu" eventType="touchUpInside" id="Hby-ji-9yi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agn-ES-pDa">
+                                        <rect key="frame" x="200" y="0.0" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="button_HF_off"/>
+                                        <state key="selected" backgroundImage="button_HF_on.png"/>
+                                        <connections>
+                                            <action selector="onHandFreeButton:" destination="Rkk-o4-Sfu" eventType="touchUpInside" id="pZt-gW-hBu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J1R-BS-dPS"/>
+                                    <constraint firstAttribute="width" constant="250" id="r5w-r7-Wdh"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="fG1-Dd-kVn">
+                                <rect key="frame" x="137.5" y="80" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1yZ-dl-9D3"/>
+                                    <constraint firstAttribute="height" constant="100" id="5fm-2J-aUb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7H-9M-JBE">
+                                <rect key="frame" x="174.5" y="188" width="26.5" height="20.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROk-qq-gIy" customClass="MarqueeView">
+                                <rect key="frame" x="87.5" y="208.5" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Sv-51-P65"/>
+                                    <constraint firstAttribute="width" constant="200" id="G7C-PJ-USg"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="mTI-r8-m8m">
+                                <rect key="frame" x="0.0" y="256.5" width="375" height="292.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KKs-G9-Xl6"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mTI-r8-m8m" firstAttribute="trailing" secondItem="KKs-G9-Xl6" secondAttribute="trailing" id="9IW-Jz-L04"/>
+                            <constraint firstItem="J7H-9M-JBE" firstAttribute="top" secondItem="KKs-G9-Xl6" secondAttribute="top" constant="188" id="CXl-KD-n5X"/>
+                            <constraint firstItem="ROk-qq-gIy" firstAttribute="centerX" secondItem="KKs-G9-Xl6" secondAttribute="centerX" id="Fq6-Hc-y7Q"/>
+                            <constraint firstItem="mTI-r8-m8m" firstAttribute="leading" secondItem="KKs-G9-Xl6" secondAttribute="leading" id="Gsm-O7-CyY"/>
+                            <constraint firstItem="ROk-qq-gIy" firstAttribute="top" secondItem="J7H-9M-JBE" secondAttribute="bottom" id="SDP-Dp-o4d"/>
+                            <constraint firstItem="FV5-Df-nzn" firstAttribute="centerX" secondItem="KKs-G9-Xl6" secondAttribute="centerX" id="X7y-aL-SkI"/>
+                            <constraint firstItem="fG1-Dd-kVn" firstAttribute="top" secondItem="KKs-G9-Xl6" secondAttribute="top" constant="80" id="Xda-9h-VQ4"/>
+                            <constraint firstItem="FV5-Df-nzn" firstAttribute="top" secondItem="mTI-r8-m8m" secondAttribute="bottom" constant="8" id="khn-hq-WLI"/>
+                            <constraint firstItem="KKs-G9-Xl6" firstAttribute="bottom" secondItem="FV5-Df-nzn" secondAttribute="bottom" constant="60" id="nbN-QT-rUb"/>
+                            <constraint firstItem="J7H-9M-JBE" firstAttribute="centerX" secondItem="KKs-G9-Xl6" secondAttribute="centerX" id="tjG-U9-mHR"/>
+                            <constraint firstItem="fG1-Dd-kVn" firstAttribute="centerX" secondItem="KKs-G9-Xl6" secondAttribute="centerX" id="van-KG-JeC"/>
+                            <constraint firstItem="mTI-r8-m8m" firstAttribute="top" secondItem="ROk-qq-gIy" secondAttribute="bottom" constant="8" id="xgF-tu-CV1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="2MH-4F-s4b" id="Fih-gE-0nk"/>
+                        <outlet property="buttonsBgView" destination="FV5-Df-nzn" id="fu7-kb-HSK"/>
+                        <outlet property="buttonsViewHeight" destination="J1R-BS-dPS" id="n8T-vI-rJ9"/>
+                        <outlet property="buttonsViewWidth" destination="r5w-r7-Wdh" id="N6m-Ix-WLO"/>
+                        <outlet property="callStatusLabel" destination="J7H-9M-JBE" id="0N6-x6-oKQ"/>
+                        <outlet property="callStatusLabelLayoutConstraintTop" destination="CXl-KD-n5X" id="hzF-xN-zaU"/>
+                        <outlet property="callStatusTop" destination="CXl-KD-n5X" id="gc2-xJ-VB1"/>
+                        <outlet property="handFreeButton" destination="Agn-ES-pDa" id="FcM-fe-NBx"/>
+                        <outlet property="hangupButton" destination="cPH-zI-SGb" id="i5H-kO-pXH"/>
+                        <outlet property="headerImageView" destination="fG1-Dd-kVn" id="IXs-WA-FDr"/>
+                        <outlet property="marqueeView" destination="ROk-qq-gIy" id="qvv-YO-AsZ"/>
+                        <outlet property="muteButton" destination="ZZA-T4-3Mq" id="NCD-N4-qgD"/>
+                        <outlet property="openDoorButton" destination="ECA-bh-TC4" id="oJs-Ze-IHi"/>
+                        <outlet property="previewImageView" destination="mTI-r8-m8m" id="imA-KD-sCD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8P-u8-65n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="1509"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="answer_keys" width="55" height="55"/>
+        <image name="button_HF_off" width="65.5" height="65"/>
+        <image name="button_HF_on.png" width="16" height="16"/>
+        <image name="button_mute_off" width="65" height="65"/>
+        <image name="button_mute_on.png" width="16" height="16"/>
+        <image name="hang_up_key" width="55" height="55"/>
+        <image name="icon" width="36.5" height="36.5"/>
+        <image name="unlocking" width="62.5" height="62.5"/>
+    </resources>
+</document>

@@ -2,9 +2,19 @@ use_frameworks!
 
 platform :ios, '10.0'
 
+# 指定开源库的下载源
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://localhost:3000/songmenglong/GemvarySpecs.git'
+
 target 'GemvaryCloudCallSDK_Example' do
   pod 'GemvaryCloudCallSDK', :path => '../'
-
+  
+  pod 'SnapKit'
+  pod 'FMDB'
+  pod 'GemvaryCommonSDK'
+  pod 'GemvaryToolSDK'
+  pod 'GemvaryNetworkSDK'
+  
   target 'GemvaryCloudCallSDK_Tests' do
     inherit! :search_paths
 

@@ -1,16 +1,59 @@
 PODS:
-  - GemvaryCloudCallSDK (0.1.1)
+  - Alamofire (5.6.4)
+  - CleanJSON (1.0.9)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GemvaryCloudCallSDK (0.1.3)
+  - GemvaryCommonSDK (0.1.2)
+  - GemvaryNetworkSDK (0.2.53):
+    - Alamofire
+    - GemvaryToolSDK
+  - GemvaryToolSDK (0.1.16):
+    - CleanJSON
+    - RealReachability
+  - RealReachability (1.4.1):
+    - RealReachability/Connection (= 1.4.1)
+    - RealReachability/Ping (= 1.4.1)
+  - RealReachability/Connection (1.4.1)
+  - RealReachability/Ping (1.4.1)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - FMDB
   - GemvaryCloudCallSDK (from `../`)
+  - GemvaryCommonSDK
+  - GemvaryNetworkSDK
+  - GemvaryToolSDK
+  - SnapKit
+
+SPEC REPOS:
+  http://localhost:3000/songmenglong/GemvarySpecs.git:
+    - GemvaryCommonSDK
+    - GemvaryNetworkSDK
+    - GemvaryToolSDK
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CleanJSON
+    - FMDB
+    - RealReachability
+    - SnapKit
 
 EXTERNAL SOURCES:
   GemvaryCloudCallSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GemvaryCloudCallSDK: 3e81be71d4d4c5d43ace49536d123599b0f3cfbb
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  CleanJSON: 910a36465ce4829e264a902ccf6d1455fdd9f980
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GemvaryCloudCallSDK: cafc5cd726828d636a4ca45c71a2260cd3e30930
+  GemvaryCommonSDK: cbe08bbcd109e8c872b8eae4d47ce72017a7d604
+  GemvaryNetworkSDK: 6e490618b6f3c1a29ae23a9bc69699391830d2f7
+  GemvaryToolSDK: 3fff170813bacc132c21bde27bd1f25a21bcbf9a
+  RealReachability: 828e74e3a1e89ba8f54395344637689cf4065c36
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 0f86dc171154a13b09d4bb5634f1cdb551482005
+PODFILE CHECKSUM: 1c8af225a2663439040e74eb16afc4f38a4ab8ce
 
 COCOAPODS: 1.12.0
